@@ -1,0 +1,30 @@
+#leftBar {
+  display: flex;
+  background-color: #bd5d38;
+  position: fixed;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 17rem;
+  height: 100%;
+  img {
+    width: 160px;
+    border-radius: 100px;
+    border: 8px solid;
+    border-color: rgba($color: #ffff, $alpha: 0.2);
+  }
+  a {
+    text-decoration: none;
+    color: rgba($color: #ffff, $alpha: 0.5);
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    line-height: 24px;
+  }
+  a:hover {
+    color: white;
+  }
+
+  li {
+    padding: 8px;
+  }
+}
