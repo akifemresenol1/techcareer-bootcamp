@@ -6,14 +6,19 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
+  <style>
+    li {
+      list-style: none;
+    }
+  </style>
   <body>
     <ul></ul>
   </body>
   <script>
     axios.get("https://northwind.vercel.app/api/products").then((res) => {
-      var name = res.data;
+      var products = res.data;
 
-      name.forEach((element) => {
+      products.forEach((element) => {
         var liElement = document.createElement("li");
         liElement.innerText =
           element.name + "  " + "-" + "  " + element.unitPrice;

@@ -6,8 +6,26 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
+  <style>
+    .content {
+      display: flex;
+      flex-direction: column;
+    }
+    input {
+      border: 2px solid gray;
+      border-radius: 5px;
+      width: 200px;
+    }
+    button {
+      margin-top: 20px;
+      width: 200px;
+      background-color: gray;
+      color: aliceblue;
+      border: 2px solid gray;
+    }
+  </style>
   <body>
-    <div>
+    <div class="content">
       <label for="">Name:</label>
       <input type="text" name="" id="name" />
       <label for="">Unit Price:</label>
