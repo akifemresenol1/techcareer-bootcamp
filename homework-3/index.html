@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    // 1) "  Çağatay Yıldız" isimli metindeki boşlukları kaldır.    (REPLACE)
+    const text = "  Çağatay Yıldız";
+    const fixedText = text.replace(/\s+/g, "");
+    console.log("1:", fixedText);
+
+    // 2) "cagatay yildiz" kelimesindeki boşlukları temizle ve tüm harfleri büyült ( REPLACE ve UPPER)
+    const text2 = "cagatay yildiz";
+    const fixedText2 = text2.replace(/\s+/g, "").toUpperCase();
+    console.log("2:", fixedText2);
+
+    // 3) "******Çağatay Yıldız" isimli metindeki yıldızları kaldır (REPLACE)
+    const text3 = "******Çağatay Yıldız";
+    const fixedText3 = text3.replaceAll("*", "");
+    console.log("3:", fixedText3);
+
+    // 4) "Çağatay  Yıldız" metnindeki kelimeler arasında 2 boşluk var bunu bir boşluk yap (REPLACE)
+    const text4 = "Çağatay  Yıldız";
+    const fixedText4 = text4.replace(" ", "");
+    console.log("4:", fixedText4);
+
+    // 5) "**Tech Career**" isimli metindeki yıldızları kaldır (REPLACE)
+
+    const text5 = "**Tech Career**";
+    const fixedText5 = text5.replaceAll("*", "");
+    console.log("5:", fixedText5);
+
+    // 6) "Tech Career" isimli metnin soluna ve sağına 3 yıldız koy. "***Tech Career***" ( Normal toplama operatörü)
+    const text6 = "Tech Career";
+    const fixedText6 = "***" + text6 + "***";
+    console.log("6:", fixedText6);
+
+    // 7) "Tech Career Bilişim teknolojileri" metnindeki son kelimeyi büyült (SUBSTRING)
+    const text7 = "Tech Career Bilişim teknolojileri";
+    const fixedText7 = text7.replace(
+      text7.substring(20, 35),
+      text7.substring(20, 35).toUpperCase()
+    );
+
+    console.log("7:", fixedText7);
+
+    // 8) "Tech bilişim" kelimelerin ilk harflerini büyült (Substring ve upper)
+    const text8 = "tech bilişim";
+    const fixedText8 =
+      text8[0].toUpperCase() +
+      text8.substring(1, 5) +
+      text8[5].toUpperCase() +
+      text8.substring(6);
+    console.log("8:", fixedText8);
+  </script>
+</html>
