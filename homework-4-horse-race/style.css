@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: green;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: white;
+}
+
+#btn {
+  padding: 15px 45px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+img {
+  margin-top: 30px;
+  max-width: 80px;
+}
+
+.horses {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.finish-line {
+  width: 10px;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+.start-line {
+  width: 5px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 180px;
+}
+
+#winner {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+}
