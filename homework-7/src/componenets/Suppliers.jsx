@@ -3,6 +3,7 @@ import { SuppliersData } from "../data/SuppliersData";
 
 function Suppliers() {
   const [suppliers, setSuppliers] = useState(SuppliersData);
+  const [sortAsc, setSortAsc] = useState(true);
 
   const deleteSuppliers = (id) => {
     var result = window.confirm("Want to delete?");
@@ -11,11 +12,16 @@ function Suppliers() {
       setSuppliers([...filteredSuppliers]);
     }
   };
-  const sortSuppliers = () => {
-    var sortedSuppliers = suppliers.sort((a, b) => {
-      return a.companyName.localeCompare(b.companyName);
+  const toggleSort = () => {
+    setSortAsc(!sortAsc);
+    const sortedSuppliers = [...suppliers].sort((a, b) => {
+      if (sortAsc) {
+        return a.companyName.localeCompare(b.companyName);
+      } else {
+        return b.companyName.localeCompare(a.companyName);
+      }
     });
-    setSuppliers([...sortedSuppliers]);
+    setSuppliers(sortedSuppliers);
   };
 
   return (
@@ -25,7 +31,7 @@ function Suppliers() {
         <thead>
           <tr>
             <th>Id</th>
-            <th onClick={() => sortSuppliers()}>Company Name</th>
+            <th onClick={() => toggleSort()}>Company Name</th>
             <th>Contact Name</th>
             <th>Country</th>
             <th>Delete</th>
