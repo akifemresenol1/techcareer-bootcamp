@@ -1,0 +1,29 @@
+table {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+td {
+  width: 100px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+th {
+  width: 100px;
+  border: 2px solid black;
+  padding: 10px;
+}
+button {
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
