@@ -1,4 +1,4 @@
-import Suppliers from "./componenets/Suppliers";
+import Suppliers from "./homework-7/Suppliers";
 
 function App() {
   return (

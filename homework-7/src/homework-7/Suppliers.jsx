@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SuppliersData } from "../data/SuppliersData";
+import { SuppliersData } from "./data/SuppliersData";
 
 function Suppliers() {
   const [suppliers, setSuppliers] = useState(SuppliersData);
