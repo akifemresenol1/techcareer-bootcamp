@@ -1,11 +1,12 @@
-import ChangeSize from "./state/ChangeSize";
+// import ChangeSize from "./state/ChangeSize";
+import Product from "./ders-aktif-odev-4/Product";
 
 function App() {
   return (
     <div className="App">
-      <ChangeSize />
+      {/* <ChangeSize /> */}
+      <Product />
     </div>
   );
 }
-
 export default App;

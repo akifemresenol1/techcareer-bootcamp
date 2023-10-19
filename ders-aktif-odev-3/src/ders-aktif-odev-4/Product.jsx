@@ -23,7 +23,7 @@ function AddCategory() {
     validationSchema: addProductValidationSchema,
     onSubmit: (values) => {
       axios
-        .post("https://northwind.vercel.app/api/categories", values)
+        .post("https://northwind.vercel.app/api/products", values)
         .then((res) => {
           console.log("Success!");
         });
@@ -41,33 +41,53 @@ function AddCategory() {
             onChange={formik.handleChange}
             value={formik.values.name}
           />
+          {formik.errors.name ? (
+            <p style={{ color: "red" }}>{formik.errors.name}</p>
+          ) : (
+            <></>
+          )}
         </div>
         <div>
           <label htmlFor="">Unit Price:</label>
           <input
             type="text"
-            name="description"
+            name="unitPrice"
             onChange={formik.handleChange}
             value={formik.values.unitPrice}
           />
+          {formik.errors.unitPrice ? (
+            <p style={{ color: "red" }}>{formik.errors.unitPrice}</p>
+          ) : (
+            <></>
+          )}
         </div>
         <div>
           <label htmlFor="">Stock:</label>
           <input
             type="text"
-            name="name"
+            name="unitsInStock"
             onChange={formik.handleChange}
             value={formik.values.unitsInStock}
           />
+          {formik.errors.unitsInStock ? (
+            <p style={{ color: "red" }}>{formik.errors.unitsInStock}</p>
+          ) : (
+            <></>
+          )}
         </div>
         <div>
           <label htmlFor="">Quantity Per Unit:</label>
           <input
             type="text"
-            name="name"
+            name="quantityPerUnit"
             onChange={formik.handleChange}
             value={formik.values.quantityPerUnit}
           />
+          {formik.errors.quantityPerUnit ? (
+            <p style={{ color: "red" }}>{formik.errors.quantityPerUnit}</p>
+          ) : (
+            <></>
+          )}
         </div>
         <div>
           <button type="submit">Add</button>
