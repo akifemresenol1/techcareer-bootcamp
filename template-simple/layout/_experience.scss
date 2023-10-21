@@ -1,0 +1,33 @@
+#experience {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  h2 {
+    font-size: 55px;
+    color: rgb(52, 58, 64);
+    margin-top: 100px;
+  }
+  .experience-box {
+    display: flex;
+    .job-title {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+    .job {
+      color: rgb(121, 120, 120);
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    p {
+      color: rgb(158, 155, 155);
+      margin-bottom: 100px;
+    }
+    .dates {
+      display: flex;
+      width: 350px;
+      justify-content: flex-end;
+      color: tomato;
+      font-size: 20px;
+    }
+  }
+}

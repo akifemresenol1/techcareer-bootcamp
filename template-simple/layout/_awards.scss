@@ -1,0 +1,16 @@
+#awards {
+  display: flex;
+  h2 {
+    font-size: 55px;
+    color: rgb(52, 58, 64);
+    margin-bottom: 100px;
+  }
+  li {
+    color: rgb(121, 120, 120);
+    font-size: 20px;
+    margin-bottom: 10px;
+    span {
+      color: gold;
+    }
+  }
+}

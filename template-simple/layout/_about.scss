@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700&display=swap");
+
+#about {
+  h1 {
+    font-size: 95px;
+    line-height: 1;
+    font-weight: 700;
+    font-family: "Saira Extra Condensed", sans-serif;
+    color: #393f45;
+  }
+  span {
+    color: #bd5d38;
+  }
+  .info > a {
+    color: #bd5d38;
+    text-decoration: none;
+  }
+
+  .info {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    color: gray;
+  }
+  .social-icons {
+    display: flex;
+
+    .social-icon {
+      text-decoration: none;
+      width: 60px;
+      height: 60px;
+      background-color: #393f45;
+      margin-top: 40px;
+      margin-right: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+  }
+  p {
+    font-size: 20px;
+    color: gray;
+  }
+}
